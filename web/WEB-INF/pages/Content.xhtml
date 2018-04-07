@@ -18,14 +18,13 @@
             <c:forEach items="#{request.getAttribute('resp')}" var="tariff">
                     <div class="col-md-4 col-sm-12 col-xs-12 col-3">
                     <div class="jumbotron p-1" style="border-radius: 20px">
-                            <h3 class="display-5 font-italic text-center">#{tariff.getNameTariff()}</h3>
-                            <h4 class="text-center">#{tariff.getPriceTariff()}$</h4>
+                            <h2 class="display-5 font-italic text-center">#{tariff.getNameTariff()}</h2>
+                            <h3 class="text-center">#{tariff.getPriceTariff()}RUB</h3>
                         <div class="card-body">
                             <h5 class="lead my-3" style="font-style: oblique">Availaible options:</h5>
                             <c:forEach items="#{tariff.getOptionModels()}" var="option">
                                 <li>
-                                    <a class="lead"> #{option.getNameOption()}</a>
-
+                                    <h:outputText value="#{option.getNameOption()}" styleClass="lead"/>
                                 </li>
                             </c:forEach>
                         </div>

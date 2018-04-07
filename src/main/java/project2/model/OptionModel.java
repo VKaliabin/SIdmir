@@ -1,4 +1,4 @@
-package project2;
+package project2.model;
 
 public class OptionModel {
     private int idOption;

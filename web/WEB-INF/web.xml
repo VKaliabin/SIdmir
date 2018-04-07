@@ -17,10 +17,14 @@
 
     <servlet>
         <servlet-name>test</servlet-name>
-        <servlet-class>project2.Servlet</servlet-class>
+        <servlet-class>project2.servlets.Servlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>test</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+
+    <listener>
+        <listener-class>project2.servlets.ServletListener</listener-class>
+    </listener>
 </web-app>
